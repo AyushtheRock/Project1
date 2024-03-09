@@ -49,7 +49,6 @@ overflow: hidden;
     transform: translateY(0);
 }
 
-
 /* MEDIA QUERIES (tablets) */
 @media screen and (max-width: 1024px) {
     .portfolio__projects {
@@ -60,7 +59,7 @@ overflow: hidden;
 
 
 /* MEDIA QUERIES (phones) */
-@media screen and (max-width: 600px) {
+@media only screen and (min-width: 380px) and (max-width:600px) {
     .portfolio__categories {
         gap: 0.6rem;
     }
@@ -72,5 +71,27 @@ overflow: hidden;
     .portfolio__projects {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+       
+    }
+}
+
+@media  screen and (max-width: 380px)  {
+    .portfolio__categories {
+        gap: 0.6rem;
+    }
+
+    .btn.cat__btn {
+        padding: 0.7rem 0.8rem;
+    }
+    .portfolio__projects {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        width: 300px;
+        margin-left: -20px;
+    }
+}
+
+
+
     }
 }
