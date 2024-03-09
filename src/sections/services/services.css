@@ -1,0 +1,113 @@
+.services__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 4rem;
+    
+}
+.service__light{
+    background: var(--color-light);
+    display: flex;
+    
+}
+.service__light:hover{
+    border: 1px solid grey;
+    background: green;
+    color: white;
+}
+.service__light p{
+    margin-top: 10px;
+}
+.service__light:hover .service__icon{
+    color: green;
+    background: white;
+}
+
+.service__light:hover .service__details h3{
+    color: white;
+}
+
+
+.card.service {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.service__icon {
+    background: green;
+    padding: 0.8rem;
+    border-radius: var(--border-radius-3);
+    font-size: 1.5rem;
+    color: var(--color-white);
+    transition: var(--transition);
+    margin: 0 auto 50px;
+    width: fit-content;
+    align-items: center;
+    place-items: center;
+    box-shadow: 10px 10px lightgreen;
+  
+    
+    
+}
+
+.service__details h3{
+    font-style: Bold;
+    
+}
+
+
+.service:hover .service__icon {
+    background: var(--color-light);
+    color: var(--color-primary);
+    
+    
+    
+}
+
+
+.service h4 {
+    margin-bottom: 0.7rem;
+}
+
+
+
+/* MEDIA QUERIES (tablets) */
+@media screen and (max-width: 1024px) {
+    .services__container {
+        gap: 1.5rem;
+    }
+    .service__light{
+        display: block;
+        text-align: center;
+        
+       }
+       .service__icon{
+        margin: 0 auto 10px;
+        width: 50px;
+       }
+}
+
+
+/* MEDIA QUERIES (phones) */
+@media screen and (max-width: 600px) {
+   .service__light{
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+   }
+
+   .service__icon{
+    margin: 0 auto 25px;
+    
+   }
+   
+    .services__container {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .card.service {
+        gap: 1.2rem;
+    }
+}

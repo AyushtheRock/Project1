@@ -1,0 +1,103 @@
+#about{
+    background-color: white;
+}
+.acm{
+display: flex;
+}
+.bx-check-double{
+    margin: 10px;
+    margin-top: 0;
+    margin-left: 0;
+    font-size: 20px;
+    color: red;
+}
+.ac{
+ margin-left: 0;
+ margin-right: 10px;
+}
+.cand{
+    margin-left: 0;
+    margin-right: 200px;
+}
+
+.box1{
+    display: flex;
+    margin-top: 60px;
+}
+.box2 {
+    width: 30%;
+    box-shadow: 0px 10px 10px 10px var(--color-light);
+    background-color: white;
+    border-right: gray;
+    height: 260px;
+}
+.box2 h2 {
+    color: green;
+    padding: 20px;
+}
+
+.box2 p {
+    padding: 20px;
+}
+
+.box2 a{
+    color: rgb(157, 29, 29);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES (tablets) */
+@media screen and (max-width: 1024px) {
+    .about__left {
+        display: none;
+    }
+
+    .about__container {
+        grid-template-columns: 1fr;
+    }
+
+    .about__right h2 {
+        text-align: center;
+    }
+}
+
+
+/* MEDIA QUERIES (phones) */
+@media screen and (max-width: 460px) {
+.about__cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.about__right .btn {
+    margin-top: 2rem;
+}
+
+.box1 {
+    display: block;
+}
+.box2{
+    width: 100%;
+
+}
+
+
+}
